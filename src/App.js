@@ -6,6 +6,8 @@ import Chalkboard from './comp/Chalkboard';
 import Newspaper from './comp/Newspaper';
 import Vinyl from './comp/Vinyl';
 import Book from './comp/Book';
+import Videogame from './comp/Videogame';
+import PersonalXP from './comp/PersonalXP';
 
 const rad = 10;
 
@@ -34,6 +36,14 @@ export default function App() {
         <Book
           position={[
             rad * Math.cos(Math.PI / 4),
+            0,
+            rad * Math.sin(Math.PI / 4),
+          ]}
+        />
+        <Videogame position={[0, 0, rad]} />
+        <PersonalXP
+          position={[
+            -rad * Math.cos(Math.PI / 4),
             0,
             rad * Math.sin(Math.PI / 4),
           ]}
