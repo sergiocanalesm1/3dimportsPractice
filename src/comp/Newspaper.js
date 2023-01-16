@@ -10,21 +10,12 @@ export default function Newspaper(props) {
   return (
     <group {...props} dispose={null}>
       <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.np_mid.geometry}
         material={materials['newspaper_page-0001']}
-        rotation={[0, Math.PI / 2, 0]}
-      />
-      <mesh
-        geometry={nodes.nplow.geometry}
-        material={materials['newspaper_page-0001']}
-        position={[-0.13, 0, 0]}
-        rotation={[0, 1.43, 0]}
-      />
-      <mesh
-        geometry={nodes.np_top.geometry}
-        material={materials['newspaper_page-0001']}
-        position={[0.1, 0, 0]}
-        rotation={[-Math.PI, 1.53, -Math.PI]}
+        position={[0.04, 0, 1.12]}
+        scale={5}
       />
     </group>
   );
